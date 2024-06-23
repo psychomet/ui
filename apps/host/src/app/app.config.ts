@@ -1,28 +1,14 @@
 import { registerLocaleData } from '@angular/common';
-import { provideHttpClient } from '@angular/common/http';
 import fa from '@angular/common/locales/fa';
-import {
-  ApplicationConfig,
-  importProvidersFrom,
-  provideZoneChangeDetection,
-} from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { provideRouter } from '@angular/router';
+import { ApplicationConfig } from '@angular/core';
 
-import { en_US, fa_IR, provideNzI18n } from 'ng-zorro-antd/i18n';
+// eslint-disable-next-line @nx/enforce-module-boundaries
+import { shellProviders } from '@ui/shell/feature/main';
 
-import { appRoutes } from './app.routes';
+import { environment } from '../environments/environment';
 
 registerLocaleData(fa);
 
 export const appConfig: ApplicationConfig = {
-  providers: [
-    provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(appRoutes),
-    provideNzI18n(fa_IR as typeof en_US),
-    importProvidersFrom(FormsModule),
-    provideAnimationsAsync(),
-    provideHttpClient(),
-  ],
+  providers: shellProviders(environment),
 };

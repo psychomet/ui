@@ -14,6 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "strictNullChecks": false,
     "paths": {
       "@ui/auth/data-access": ["libs/auth/data-access/src/index.ts"],
       "@ui/auth/feature/login": ["libs/auth/feature/login/src/index.ts"],

@@ -1,1 +1,1 @@
-export * from './lib/ui.component';
+export * from './lib/components/basic-form/basic-form.component';
