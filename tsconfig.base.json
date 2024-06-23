@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ui/auth/feature/main": ["libs/auth/feature/main/src/index.ts"],
       "@ui/shared/data-access": ["libs/shared/data-access/src/index.ts"],
       "@ui/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@ui/shared/util": ["libs/shared/util/src/index.ts"],
