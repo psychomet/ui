@@ -4,7 +4,8 @@
     "**/*"
   ],
   "plugins": [
-    "@nx"
+    "@nx",
+    "simple-import-sort"
   ],
   "overrides": [
     {
@@ -15,6 +16,49 @@
         "*.jsx"
       ],
       "rules": {
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              // Angular related packages come first.
+              [
+                "^@angular"
+              ],
+              // RxJS imports.
+              [
+                "^rxjs"
+              ],
+              // Third-party packages.
+              [
+                "^@?\\w"
+              ],
+              // Side effect imports.
+              [
+                "^\\u0000"
+              ],
+              // Absolute imports with the prefix @ui.
+              [
+                "^@ui"
+              ],
+              // Parent imports. Put `..` last.
+              [
+                "^\\.\\.(?!/?$)",
+                "^\\.\\./?$"
+              ],
+              // Other relative imports. Put same-folder imports and `.` last.
+              [
+                "^\\./(?=.*/)(?!/?$)",
+                "^\\.(?!/?$)",
+                "^\\./?$"
+              ],
+              // Style imports.
+              [
+                "^.+\\.s?css$"
+              ]
+            ]
+          }
+        ],
+        "simple-import-sort/exports": "error",
         "@nx/enforce-module-boundaries": [
           "error",
           {
