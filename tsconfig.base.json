@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@ui/shared/data-access": ["libs/shared/data-access/src/index.ts"],
+      "@ui/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@ui/shell/feature/dashboard": [
         "libs/shell/feature/dashboard/src/index.ts"
       ],
