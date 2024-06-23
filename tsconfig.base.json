@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ui/shell/feature/dashboard": [
+        "libs/shell/feature/dashboard/src/index.ts"
+      ],
       "@ui/shell/feature/main": ["libs/shell/feature/main/src/index.ts"]
     }
   },
