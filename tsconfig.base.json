@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ui/shared/data-access": ["libs/shared/data-access/src/index.ts"],
       "@ui/shell/feature/dashboard": [
         "libs/shell/feature/dashboard/src/index.ts"
       ],
