@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'feature-shell-dashboard',
+  displayName: 'shell-feature-main',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../../coverage/libs/feature/shell/dashboard',
+  coverageDirectory: '../../../../coverage/libs/shell/feature/main',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

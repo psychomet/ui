@@ -15,14 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ui/feature/shell/dashboard": [
-        "libs/feature/shell/dashboard/src/index.ts"
-      ],
-      "@ui/feature/shell/health-check": [
-        "libs/feature/shell/health-check/src/index.ts"
-      ],
-      "@ui/feature/shell/layout": ["libs/feature/shell/layout/src/index.ts"],
-      "@ui/feature/shell/main": ["libs/feature/shell/main/src/index.ts"]
+      "@ui/shell/feature/main": ["libs/shell/feature/main/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
