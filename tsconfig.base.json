@@ -18,6 +18,9 @@
       "@ui/shell/feature/dashboard": [
         "libs/shell/feature/dashboard/src/index.ts"
       ],
+      "@ui/shell/feature/health-check": [
+        "libs/shell/feature/health-check/src/index.ts"
+      ],
       "@ui/shell/feature/layout": ["libs/shell/feature/layout/src/index.ts"],
       "@ui/shell/feature/main": ["libs/shell/feature/main/src/index.ts"]
     }
