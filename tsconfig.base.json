@@ -19,6 +19,7 @@
       "@ui/auth/feature/login": ["libs/auth/feature/login/src/index.ts"],
       "@ui/auth/feature/main": ["libs/auth/feature/main/src/index.ts"],
       "@ui/auth/ui": ["libs/auth/ui/src/index.ts"],
+      "@ui/auth/util": ["libs/auth/util/src/index.ts"],
       "@ui/shared/data-access": ["libs/shared/data-access/src/index.ts"],
       "@ui/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@ui/shared/util": ["libs/shared/util/src/index.ts"],
