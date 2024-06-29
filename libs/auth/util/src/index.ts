@@ -1,1 +1,1 @@
-export * from './lib/util.component';
+export * from './lib/types/login-response.type';
